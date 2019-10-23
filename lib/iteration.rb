@@ -41,8 +41,6 @@ def total_even_pairs(src)
   return results
 end
 
-end
-
 
 
 def find_greater_pair(src)
