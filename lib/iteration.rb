@@ -7,17 +7,19 @@ def join_ingredients(src)
   # "I love (inner array element 0) and (inner array element 1) on my pizza""
   # As such, there should be a new String for each inner array, or pair
   
-  puts src
- 
-  #row_index = 0
-  #while row_index < src.count do
-    #element_index = 0
-    #while element_index < src[row_index].count do
-        #puts src[row_index][element_index]
-        #element_index += 1
-    #end
-      #row_index += 1
-  #end
+  row_index = 0
+  while row_index < src.count do
+    element_index = 0
+    while element_index < src[row_index].count do
+        ingredient1 = element_index[0]
+        ingredient2 = element_index[1]
+        #add the first and second ingrediants into an array
+        inner_results << "I love #{ingredient1} and #{ingredient2} on my pizza"
+        element_index += 1
+    end
+      row_index += 1
+  end
+  puts inner_results
 end
 
 def find_greater_pair(src)
@@ -35,3 +37,5 @@ def total_even_pairs(src)
   # the number was even. Review the operator documentation if you've forgotten
   # this!
 end
+
+
