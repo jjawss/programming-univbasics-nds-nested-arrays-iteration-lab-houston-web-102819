@@ -15,12 +15,11 @@ def join_ingredients(src)
         ingredient1 = src[row_index][0]
         ingredient2 = src[row_index][1]
         #add the first and second ingrediants into an array
-        inner_results << "I love #{ingredient1} and #{ingredient2} on my pizza"
+        puts inner_results << "I love #{ingredient1} and #{ingredient2} on my pizza"
         element_index += 1
     end
       row_index += 1
   end
-  puts inner_results
 end
 
 def find_greater_pair(src)
