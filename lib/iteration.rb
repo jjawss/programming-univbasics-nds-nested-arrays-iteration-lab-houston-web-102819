@@ -12,7 +12,7 @@ def join_ingredients(src)
     element_index = 0
     inner_results = []
     while element_index < src[row_index].count do
-        ingredient1 = element_index[0]
+        ingredient1 = src[row_index][element_index]
         ingredient2 = element_index[1]
         #add the first and second ingrediants into an array
         inner_results << "I love #{ingredient1} and #{ingredient2} on my pizza"
